@@ -1,0 +1,10 @@
+@inject IStringLocalizer<SharedResource> Localizer
+<form asp-controller="Home" asp-action="SetLanguage" method="post" class="language-form">
+    @Html.AntiForgeryToken()
+    <input type="hidden" name="returnUrl" value="@Context.Request.Path@Context.Request.QueryString" />
+    <label class="visually-hidden" for="culture">@Localizer["ChooseLanguage"]</label>
+    <select id="culture" name="culture" onchange="this.form.submit()" aria-label="@Localizer["ChooseLanguage"]">
+        <option value="uk-UA" selected="@(System.Globalization.CultureInfo.CurrentUICulture.Name == "uk-UA")">Українська</option>
+        <option value="en-US" selected="@(System.Globalization.CultureInfo.CurrentUICulture.Name == "en-US")">English</option>
+    </select>
+</form>

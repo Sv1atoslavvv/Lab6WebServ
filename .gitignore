@@ -1,0 +1,21 @@
+**/bin/
+**/obj/
+.vs/
+.idea/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+.env
+secrets.json
+**/Logs/
+*.log
+**/.keys/
+**/wwwroot/Files/*
+!**/wwwroot/Files/.gitkeep
+
+# Local SDK and package caches used for this workspace build
+.dotnet/
+.dotnet-home/
+.nuget/
+/.git-push-tmp/

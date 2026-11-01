@@ -1,0 +1,35 @@
+@model EmailSenderWeb.Models.StoredFileItem
+@inject IStringLocalizer<SharedResource> Localizer
+@{
+    ViewData["Title"] = Localizer["FileDetails"];
+}
+
+<section class="hero">
+    <p class="eyebrow">@Localizer["FileDetails"]</p>
+    <h1>@Model.DisplayName</h1>
+    <p class="lead">@Localizer["FileMetadata", Model.Length < 1024 ? $"{Model.Length} B" : $"{Model.Length / 1024.0:0.##} KB", Model.UploadedAt.ToString("g")]</p>
+    <a class="button-link" asp-controller="Files" asp-action="Index">← @Localizer["BackToFiles"]</a>
+</section>
+
+@if (Model.CanPreview)
+{
+    <section class="card preview-card">
+        @if (Model.DisplayName.EndsWith(".pdf", StringComparison.OrdinalIgnoreCase))
+        {
+            <iframe title="Перегляд PDF: @Model.DisplayName" src="@Url.Action("Preview", "Files", new { name = Model.StoredName })"></iframe>
+        }
+        else if (new[] { ".png", ".jpg", ".jpeg", ".gif", ".webp", ".bmp" }.Contains(System.IO.Path.GetExtension(Model.DisplayName), StringComparer.OrdinalIgnoreCase))
+        {
+            <img class="preview-image" src="@Url.Action("Preview", "Files", new { name = Model.StoredName })" alt="@Model.DisplayName" />
+        }
+        else
+        {
+            <iframe title="Перегляд текстового файлу: @Model.DisplayName" src="@Url.Action("Preview", "Files", new { name = Model.StoredName })"></iframe>
+        }
+    </section>
+}
+else
+{
+    <section class="card empty-state">@Localizer["PreviewUnavailable"]</section>
+    <a class="button-link" asp-controller="Files" asp-action="Preview" asp-route-name="@Model.StoredName">@Localizer["OpenFile"]</a>
+}

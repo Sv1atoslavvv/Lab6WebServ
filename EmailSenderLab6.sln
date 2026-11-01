@@ -1,0 +1,24 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EmailSenderWeb", "EmailSenderWeb\EmailSenderWeb.csproj", "{DA308E29-CAD2-4B19-8632-1D8F1CCCEE6C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EmailSenderWeb.Services", "EmailSenderWeb.Services\EmailSenderWeb.Services.csproj", "{F7C9A02F-453A-40C9-94EB-1050EE8380AD}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DA308E29-CAD2-4B19-8632-1D8F1CCCEE6C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DA308E29-CAD2-4B19-8632-1D8F1CCCEE6C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DA308E29-CAD2-4B19-8632-1D8F1CCCEE6C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DA308E29-CAD2-4B19-8632-1D8F1CCCEE6C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F7C9A02F-453A-40C9-94EB-1050EE8380AD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F7C9A02F-453A-40C9-94EB-1050EE8380AD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F7C9A02F-453A-40C9-94EB-1050EE8380AD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F7C9A02F-453A-40C9-94EB-1050EE8380AD}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal

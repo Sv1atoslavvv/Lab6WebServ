@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <resheader name="resmimetype"><value>text/microsoft-resx</value></resheader>
+  <resheader name="version"><value>2.0</value></resheader>
+  <resheader name="reader"><value>System.Resources.ResXResourceReader, System.Windows.Forms</value></resheader>
+  <resheader name="writer"><value>System.Resources.ResXResourceWriter, System.Windows.Forms</value></resheader>
+  <data name="Brand" xml:space="preserve"><value>Email Sender</value></data>
+  <data name="SendEmail" xml:space="preserve"><value>Надіслати лист</value></data>
+  <data name="Lifetimes" xml:space="preserve"><value>Життєві цикли сервісів</value></data>
+  <data name="Files" xml:space="preserve"><value>Файли</value></data>
+  <data name="Footer" xml:space="preserve"><value>Лабораторна робота № 5 · ASP.NET Core MVC · Локалізація</value></data>
+  <data name="ChooseLanguage" xml:space="preserve"><value>Оберіть мову</value></data>
+  <data name="LabEyebrow" xml:space="preserve"><value>Лабораторна робота № 5 · Локалізація</value></data>
+  <data name="SendMessageTitle" xml:space="preserve"><value>Надішліть повідомлення</value></data>
+  <data name="SendMessageDescription" xml:space="preserve"><value>Введіть одержувача й текст листа. Форму обробляє MVC action, який викликає сервіс IEmailSender.</value></data>
+  <data name="RecipientLabel" xml:space="preserve"><value>Email одержувача</value></data>
+  <data name="MessageLabel" xml:space="preserve"><value>Повідомлення</value></data>
+  <data name="RecipientRequired" xml:space="preserve"><value>Вкажіть email одержувача.</value></data>
+  <data name="RecipientInvalid" xml:space="preserve"><value>Введіть коректну email-адресу.</value></data>
+  <data name="MessageRequired" xml:space="preserve"><value>Введіть текст повідомлення.</value></data>
+  <data name="MessageLength" xml:space="preserve"><value>Повідомлення має містити від 2 до 5000 символів.</value></data>
+  <data name="MessagePlaceholder" xml:space="preserve"><value>Текст повідомлення...</value></data>
+  <data name="Submit" xml:space="preserve"><value>Надіслати</value></data>
+  <data name="EmailSentSuccessfully" xml:space="preserve"><value>Повідомлення успішно надіслано.</value></data>
+  <data name="EmailSendError" xml:space="preserve"><value>Не вдалося надіслати лист. Перевірте налаштування EmailSender та доступ до SMTP-сервера.</value></data>
+  <data name="FilesTitle" xml:space="preserve"><value>Файли на сервері</value></data>
+  <data name="FilesDescription" xml:space="preserve"><value>Завантажуйте файли до wwwroot/Files та переглядайте збережені документи й зображення.</value></data>
+  <data name="UploadFile" xml:space="preserve"><value>Завантажити файл</value></data>
+  <data name="UploadDescription" xml:space="preserve"><value>Максимальний розмір — 20 МБ. Активні файли, які можуть виконувати код у браузері, заблоковано.</value></data>
+  <data name="ChooseFile" xml:space="preserve"><value>Оберіть файл</value></data>
+  <data name="Upload" xml:space="preserve"><value>Завантажити</value></data>
+  <data name="SavedFiles" xml:space="preserve"><value>Збережені файли</value></data>
+  <data name="TotalFiles" xml:space="preserve"><value>Усього: {0}</value></data>
+  <data name="NoFiles" xml:space="preserve"><value>Поки що файлів немає. Завантажте перший файл за допомогою форми вище.</value></data>
+  <data name="Name" xml:space="preserve"><value>Назва</value></data>
+  <data name="Size" xml:space="preserve"><value>Розмір</value></data>
+  <data name="Added" xml:space="preserve"><value>Додано</value></data>
+  <data name="Preview" xml:space="preserve"><value>Переглянути</value></data>
+  <data name="Open" xml:space="preserve"><value>Відкрити</value></data>
+  <data name="FileDetails" xml:space="preserve"><value>Перегляд файлу</value></data>
+  <data name="FileMetadata" xml:space="preserve"><value>Розмір: {0} · Додано: {1}</value></data>
+  <data name="BackToFiles" xml:space="preserve"><value>До списку файлів</value></data>
+  <data name="PreviewUnavailable" xml:space="preserve"><value>Попередній перегляд цього типу файлу в браузері недоступний. Файл буде відкрито або завантажено окремо.</value></data>
+  <data name="OpenFile" xml:space="preserve"><value>Відкрити файл</value></data>
+  <data name="LifetimesDescription" xml:space="preserve"><value>На цій сторінці кожен сервіс запитується двічі в межах одного HTTP-запиту.</value></data>
+  <data name="Registration" xml:space="preserve"><value>Реєстрація</value></data>
+  <data name="Instance1" xml:space="preserve"><value>Екземпляр 1</value></data>
+  <data name="Instance2" xml:space="preserve"><value>Екземпляр 2</value></data>
+  <data name="Behavior" xml:space="preserve"><value>Поведінка</value></data>
+  <data name="TransientBehavior" xml:space="preserve"><value>Новий екземпляр при кожному запиті до контейнера.</value></data>
+  <data name="ScopedBehavior" xml:space="preserve"><value>Один екземпляр у межах HTTP-запиту.</value></data>
+  <data name="SingletonBehavior" xml:space="preserve"><value>Один екземпляр на весь час роботи застосунку.</value></data>
+  <data name="ChooseFileError" xml:space="preserve"><value>Оберіть файл для завантаження.</value></data>
+  <data name="MaxFileSizeError" xml:space="preserve"><value>Максимальний розмір файлу — 20 МБ.</value></data>
+  <data name="FileTypeError" xml:space="preserve"><value>Цей тип файлу не дозволено завантажувати.</value></data>
+  <data name="FileUploaded" xml:space="preserve"><value>Файл «{0}» завантажено.</value></data>
+  <data name="ErrorTitle" xml:space="preserve"><value>Сталася помилка</value></data>
+  <data name="ErrorDescription" xml:space="preserve"><value>Спробуйте повернутися на головну сторінку.</value></data>
+  <data name="Home" xml:space="preserve"><value>На головну</value></data>
+</root>

@@ -1,0 +1,13 @@
+@inject IStringLocalizer<SharedResource> Localizer
+
+<header class="site-header">
+    <div class="container nav-row">
+        <a class="brand" asp-controller="Home" asp-action="Index">@Localizer["Brand"]</a>
+        <nav>
+            <a asp-controller="Home" asp-action="Index">@Localizer["SendEmail"]</a>
+            <a asp-controller="Lifetimes" asp-action="Index">@Localizer["Lifetimes"]</a>
+            <a asp-controller="Files" asp-action="Index">@Localizer["Files"]</a>
+        </nav>
+        <partial name="_LanguageSelector" />
+    </div>
+</header>

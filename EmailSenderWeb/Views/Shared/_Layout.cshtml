@@ -1,0 +1,18 @@
+@inject IStringLocalizer<SharedResource> Localizer
+<!DOCTYPE html>
+<html lang="@System.Globalization.CultureInfo.CurrentUICulture.Name">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - EmailSenderWeb</title>
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+</head>
+<body>
+    @await Component.InvokeAsync("Navbar")
+    <main class="container">
+        @RenderBody()
+    </main>
+    <footer class="container footer">@Localizer["Footer"]</footer>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>

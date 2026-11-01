@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <resheader name="resmimetype"><value>text/microsoft-resx</value></resheader>
+  <resheader name="version"><value>2.0</value></resheader>
+  <resheader name="reader"><value>System.Resources.ResXResourceReader, System.Windows.Forms</value></resheader>
+  <resheader name="writer"><value>System.Resources.ResXResourceWriter, System.Windows.Forms</value></resheader>
+  <data name="Brand" xml:space="preserve"><value>Email Sender</value></data>
+  <data name="SendEmail" xml:space="preserve"><value>Send email</value></data>
+  <data name="Lifetimes" xml:space="preserve"><value>Service lifetimes</value></data>
+  <data name="Files" xml:space="preserve"><value>Files</value></data>
+  <data name="Footer" xml:space="preserve"><value>Lab 5 · ASP.NET Core MVC · Localization</value></data>
+  <data name="ChooseLanguage" xml:space="preserve"><value>Choose language</value></data>
+  <data name="LabEyebrow" xml:space="preserve"><value>Laboratory work No. 5 · Localization</value></data>
+  <data name="SendMessageTitle" xml:space="preserve"><value>Send a message</value></data>
+  <data name="SendMessageDescription" xml:space="preserve"><value>Enter the recipient and message. The MVC action processes the form and calls the IEmailSender service.</value></data>
+  <data name="RecipientLabel" xml:space="preserve"><value>Recipient email</value></data>
+  <data name="MessageLabel" xml:space="preserve"><value>Message</value></data>
+  <data name="RecipientRequired" xml:space="preserve"><value>Enter the recipient email address.</value></data>
+  <data name="RecipientInvalid" xml:space="preserve"><value>Enter a valid email address.</value></data>
+  <data name="MessageRequired" xml:space="preserve"><value>Enter a message.</value></data>
+  <data name="MessageLength" xml:space="preserve"><value>The message must contain between 2 and 5000 characters.</value></data>
+  <data name="MessagePlaceholder" xml:space="preserve"><value>Message text...</value></data>
+  <data name="Submit" xml:space="preserve"><value>Send</value></data>
+  <data name="EmailSentSuccessfully" xml:space="preserve"><value>Message sent successfully.</value></data>
+  <data name="EmailSendError" xml:space="preserve"><value>Could not send the email. Check EmailSender settings and SMTP server access.</value></data>
+  <data name="FilesTitle" xml:space="preserve"><value>Files on the server</value></data>
+  <data name="FilesDescription" xml:space="preserve"><value>Upload files to wwwroot/Files and browse saved documents and images.</value></data>
+  <data name="UploadFile" xml:space="preserve"><value>Upload a file</value></data>
+  <data name="UploadDescription" xml:space="preserve"><value>Maximum size is 20 MB. Active files that could execute code in a browser are blocked.</value></data>
+  <data name="ChooseFile" xml:space="preserve"><value>Choose a file</value></data>
+  <data name="Upload" xml:space="preserve"><value>Upload</value></data>
+  <data name="SavedFiles" xml:space="preserve"><value>Saved files</value></data>
+  <data name="TotalFiles" xml:space="preserve"><value>Total: {0}</value></data>
+  <data name="NoFiles" xml:space="preserve"><value>No files yet. Upload the first file using the form above.</value></data>
+  <data name="Name" xml:space="preserve"><value>Name</value></data>
+  <data name="Size" xml:space="preserve"><value>Size</value></data>
+  <data name="Added" xml:space="preserve"><value>Added</value></data>
+  <data name="Preview" xml:space="preserve"><value>Preview</value></data>
+  <data name="Open" xml:space="preserve"><value>Open</value></data>
+  <data name="FileDetails" xml:space="preserve"><value>File details</value></data>
+  <data name="FileMetadata" xml:space="preserve"><value>Size: {0} · Added: {1}</value></data>
+  <data name="BackToFiles" xml:space="preserve"><value>Back to files</value></data>
+  <data name="PreviewUnavailable" xml:space="preserve"><value>Previewing this file type in the browser is not available. The file will be opened or downloaded separately.</value></data>
+  <data name="OpenFile" xml:space="preserve"><value>Open file</value></data>
+  <data name="LifetimesDescription" xml:space="preserve"><value>Each service is requested twice within the same HTTP request on this page.</value></data>
+  <data name="Registration" xml:space="preserve"><value>Registration</value></data>
+  <data name="Instance1" xml:space="preserve"><value>Instance 1</value></data>
+  <data name="Instance2" xml:space="preserve"><value>Instance 2</value></data>
+  <data name="Behavior" xml:space="preserve"><value>Behavior</value></data>
+  <data name="TransientBehavior" xml:space="preserve"><value>A new instance is created for every container request.</value></data>
+  <data name="ScopedBehavior" xml:space="preserve"><value>One instance is shared within an HTTP request.</value></data>
+  <data name="SingletonBehavior" xml:space="preserve"><value>One instance lives for the entire application lifetime.</value></data>
+  <data name="ChooseFileError" xml:space="preserve"><value>Choose a file to upload.</value></data>
+  <data name="MaxFileSizeError" xml:space="preserve"><value>The maximum file size is 20 MB.</value></data>
+  <data name="FileTypeError" xml:space="preserve"><value>This file type is not allowed.</value></data>
+  <data name="FileUploaded" xml:space="preserve"><value>File “{0}” uploaded.</value></data>
+  <data name="ErrorTitle" xml:space="preserve"><value>An error occurred</value></data>
+  <data name="ErrorDescription" xml:space="preserve"><value>Please try returning to the home page.</value></data>
+  <data name="Home" xml:space="preserve"><value>Home</value></data>
+</root>

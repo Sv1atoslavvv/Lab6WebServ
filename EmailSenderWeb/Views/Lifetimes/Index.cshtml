@@ -1,0 +1,20 @@
+@model LifetimeDemoModel
+@inject IStringLocalizer<SharedResource> Localizer
+@{
+    ViewData["Title"] = Localizer["Lifetimes"];
+}
+<section class="hero">
+    <p class="eyebrow">Dependency Injection</p>
+    <h1>@Localizer["Lifetimes"]</h1>
+    <p class="lead">@Localizer["LifetimesDescription"]</p>
+</section>
+<div class="card table-wrap">
+    <table>
+        <thead><tr><th>@Localizer["Registration"]</th><th>@Localizer["Instance1"]</th><th>@Localizer["Instance2"]</th><th>@Localizer["Behavior"]</th></tr></thead>
+        <tbody>
+            <tr><td>Transient</td><td>@Model.TransientFirst</td><td>@Model.TransientSecond</td><td>@Localizer["TransientBehavior"]</td></tr>
+            <tr><td>Scoped</td><td>@Model.ScopedFirst</td><td>@Model.ScopedSecond</td><td>@Localizer["ScopedBehavior"]</td></tr>
+            <tr><td>Singleton</td><td>@Model.SingletonFirst</td><td>@Model.SingletonSecond</td><td>@Localizer["SingletonBehavior"]</td></tr>
+        </tbody>
+    </table>
+</div>

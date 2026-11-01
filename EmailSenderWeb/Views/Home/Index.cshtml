@@ -1,0 +1,29 @@
+@model EmailFormModel
+@inject IStringLocalizer<SharedResource> Localizer
+@{
+    ViewData["Title"] = Localizer["SendEmail"];
+}
+<section class="hero">
+    <p class="eyebrow">@Localizer["LabEyebrow"]</p>
+    <h1>@Localizer["SendMessageTitle"]</h1>
+    <p class="lead">@Localizer["SendMessageDescription"]</p>
+</section>
+@if (ViewBag.Notice is string notice)
+{
+    <div class="alert success" role="status">@Localizer[notice]</div>
+}
+<div class="card form-card">
+    <form asp-action="Index" method="post">
+        @Html.AntiForgeryToken()
+        <div asp-validation-summary="ModelOnly" class="validation-summary"></div>
+        <label asp-for="Recipient"></label>
+        <input asp-for="Recipient" type="email" autocomplete="email" placeholder="recipient@example.com" />
+        <span asp-validation-for="Recipient" class="field-error"></span>
+
+        <label asp-for="Message"></label>
+        <textarea asp-for="Message" rows="7" placeholder="@Localizer["MessagePlaceholder"]"></textarea>
+        <span asp-validation-for="Message" class="field-error"></span>
+
+        <button type="submit">@Localizer["Submit"]</button>
+    </form>
+</div>
